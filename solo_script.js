@@ -42,11 +42,14 @@ function calculateSTI(array){
     bonus = 0.13;
   }
 
-  newArray[1] = bonus;
+  newArray[1] = ' ' + bonus;
+
   newArray[2] = baseSalary * (1.0 + bonus);
-  newArray[2] = Math.round(newArray[2]*100) /100;
+  newArray[2] = ' ' + Math.round(newArray[2]*100) /100;
+
   newArray[3] = baseSalary * bonus;
-  newArray[3] = Math.round(newArray[3]*100) /100;
+  newArray[3] = ' ' +Math.round(newArray[3]*100) /100;
+
   console.log(newArray[0] + " " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
   return newArray;
 }
